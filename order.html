@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อสินค้า — LUMIBELLE</title>
+  <meta name="description" content="กรอกข้อมูลเพื่อสั่งซื้อสินค้า LUMIBELLE">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-specific touches (order) */
+    .page-head {
+      padding: var(--space-6) 0 var(--space-5);
+      background: linear-gradient(180deg, var(--cream) 0%, var(--cream-deep) 100%);
+    }
+
+    .page-head h1 {
+      margin-bottom: 0;
+      font-size: var(--text-3xl);
+    }
+
+    .page-head .lead {
+      margin-bottom: 0;
+    }
+
+    textarea.input {
+      resize: vertical;
+      min-height: 3.5rem;
+      line-height: 1.7;
+    }
+
+    .form-actions {
+      margin-top: var(--space-4);
+    }
+
+    .form-actions p {
+      max-width: none;
+      margin: var(--space-2) 0 0;
+      font-size: var(--text-xs);
+      text-align: center;
+      color: var(--ink-soft);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Lumibelle</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head text-center">
+      <div class="container">
+        <h1>สั่งซื้อสินค้า</h1>
+        <hr class="divider">
+        <p class="lead">กรอกข้อมูลของคุณ แล้วเราจะติดต่อกลับเพื่อยืนยันการสั่งซื้อ</p>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container container--narrow">
+        <form id="orderForm">
+
+          <div class="field">
+            <label for="customerName">ชื่อลูกค้า</label>
+            <input class="input" type="text" id="customerName" name="customerName" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="contact">เบอร์โทร / Line</label>
+            <input class="input" type="text" id="contact" name="contact" autocomplete="tel" required>
+          </div>
+
+          <div class="field">
+            <label for="items">รายการสินค้า</label>
+            <textarea class="input" id="items" name="items" rows="2" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="total">จำนวนเงินรวม (บาท)</label>
+            <input class="input" type="text" id="total" name="total" inputmode="numeric" required>
+          </div>
+
+          <div class="field">
+            <label for="note">หมายเหตุ</label>
+            <textarea class="input" id="note" name="note" rows="3" placeholder="เช่น ที่อยู่จัดส่ง หรือข้อความถึงร้าน"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn--solid btn--block" type="submit">ยืนยันสั่งซื้อ</button>
+            <p>ต้องการเปลี่ยนสินค้า? <a class="link-line" href="product.html">กลับไปเลือกสินค้า</a></p>
+          </div>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div>
+          <span class="brand">Lumibelle</span>
+          <p class="mt-2 mb-0">น้ำหอมฉีดตัวและโรลออน สำหรับทุกอารมณ์</p>
+        </div>
+        <nav class="stack" aria-label="เมนูท้ายหน้า">
+          <div><a href="index.html">หน้าแรก</a></div>
+          <div><a href="product.html">สินค้าทั้งหมด</a></div>
+        </nav>
+      </div>
+      <p class="site-footer__copy mb-0">&copy; 2026 LUMIBELLE. สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สินค้าทั้งหมด — LUMIBELLE</title>
+  <meta name="description" content="น้ำหอมฉีดตัวและโรลออน LUMIBELLE เลือกกรองตามอารมณ์ Fresh, Sweet, Confident และ Romance">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-specific touches (products) */
+    .page-head {
+      padding: var(--space-6) 0 var(--space-5);
+      background: linear-gradient(180deg, var(--cream) 0%, var(--cream-deep) 100%);
+    }
+
+    .page-head h1 {
+      margin-bottom: 0;
+      font-size: var(--text-3xl);
+    }
+
+    .page-head .lead {
+      margin-bottom: 0;
+    }
+
+    #product-list > p {
+      grid-column: 1 / -1;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Lumibelle</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html" aria-current="page">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head text-center">
+      <div class="container">
+        <h1>สินค้าทั้งหมด</h1>
+        <hr class="divider">
+        <p class="lead">น้ำหอมฉีดตัวและโรลออน เลือกกลิ่นตามอารมณ์ที่ใช่สำหรับวันนี้</p>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <!-- Rendered by script.js -->
+        <div id="filter-bar" role="group" aria-label="กรองสินค้าตามอารมณ์"></div>
+        <div id="product-list" aria-live="polite"></div>
+        <noscript>
+          <p class="text-center muted">กรุณาเปิดใช้งาน JavaScript เพื่อดูรายการสินค้า</p>
+        </noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div>
+          <span class="brand">Lumibelle</span>
+          <p class="mt-2 mb-0">น้ำหอมฉีดตัวและโรลออน สำหรับทุกอารมณ์</p>
+        </div>
+        <nav class="stack" aria-label="เมนูท้ายหน้า">
+          <div><a href="index.html">หน้าแรก</a></div>
+          <div><a href="product.html">สินค้าทั้งหมด</a></div>
+        </nav>
+      </div>
+      <p class="site-footer__copy mb-0">&copy; 2026 LUMIBELLE. สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

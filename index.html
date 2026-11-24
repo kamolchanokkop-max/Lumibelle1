@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LUMIBELLE — น้ำหอมฉีดตัวสำหรับทุกอารมณ์</title>
+  <meta name="description" content="LUMIBELLE น้ำหอมฉีดตัวและโรลออน 4 อารมณ์ Fresh, Sweet, Confident และ Romance">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-specific touches (home) */
+    .hero--full {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 77px);
+      min-height: calc(100svh - 77px);
+      padding: var(--space-6) 0;
+      text-align: center;
+    }
+
+    .hero--full h1 {
+      max-width: 16em;
+      margin: 0 auto var(--space-3);
+      font-size: clamp(2.25rem, 1.4rem + 3.8vw, 4.5rem);
+      line-height: 1.35;
+    }
+
+    .hero--full .lead {
+      max-width: 36em;
+      margin: 0 auto var(--space-5);
+    }
+
+    .mood-card {
+      color: inherit;
+    }
+
+    .mood-card .card__body {
+      padding: var(--space-4) var(--space-3);
+    }
+
+    .mood-card h3 {
+      margin: var(--space-2) 0 0;
+    }
+
+    .mood-card__sub {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: var(--text-lg);
+      font-style: italic;
+      color: var(--ink-soft);
+    }
+
+    .mood-card__text {
+      flex: 1;
+      margin: 0 0 var(--space-3);
+      font-size: var(--text-sm);
+      line-height: 1.9;
+      color: var(--ink-soft);
+    }
+
+    .mood-card .link-line {
+      align-self: flex-start;
+    }
+
+    .mood-card:hover .link-line {
+      color: var(--accent-deep);
+      border-color: var(--accent-deep);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Lumibelle</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html" aria-current="page">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero hero--full">
+      <div class="container">
+        <h1>เติมประกายความมั่นใจและสะท้อนตัวตนในทุกอารมณ์</h1>
+        <p class="lead">ด้วยกลิ่นหอมที่ออกแบบมาเพื่ออยู่เคียงข้างคุณในทุกจังหวะของวัน</p>
+        <a class="btn" href="product.html">ดูสินค้าทั้งหมด</a>
+      </div>
+    </section>
+
+    <!-- Moods -->
+    <section class="section section--white" id="moods">
+      <div class="container">
+        <div class="section-head text-center">
+          <h2>เลือกกลิ่นตามอารมณ์ของคุณ</h2>
+          <hr class="divider">
+          <p class="lead">สี่อารมณ์ สี่บุคลิก เลือกกลิ่นที่ตรงกับวันนี้ของคุณ</p>
+        </div>
+
+        <div class="grid grid--4">
+
+          <a class="card mood-card mood mood--fresh" href="product.html?mood=fresh">
+            <div class="card__body">
+              <span class="mood-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0"/></svg>
+              </span>
+              <h3>Fresh</h3>
+              <p class="mood-card__sub">Morning Breeze</p>
+              <span class="mood-rule"></span>
+              <p class="mood-card__text">ปลุกความสดชื่นให้ตื่นตัวด้วยกลิ่นอายโปร่งสบายราวกับได้สูดอากาศบริสุทธิ์ริมทะเลในเช้าวันใหม่ ผสานความสะอาดของ White Tea และ Sea Salt ให้คุณรู้สึกเบาสบายและพร้อมเริ่มต้นวันอย่างมีพลัง</p>
+              <span class="link-line">ดูสินค้า Fresh</span>
+            </div>
+          </a>
+
+          <a class="card mood-card mood mood--sweet" href="product.html?mood=sweet">
+            <div class="card__body">
+              <span class="mood-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"/><path d="M12 7c0-2 1-3 3-4"/></svg>
+              </span>
+              <h3>Sweet</h3>
+              <p class="mood-card__sub">Soft Whisper</p>
+              <span class="mood-rule"></span>
+              <p class="mood-card__text">สัมผัสความหวานละมุนที่แสนอบอุ่นและน่าทะนุถนอมราวกับอ้อมกอดที่คุ้นเคย ด้วยความนุ่มนวลของ Peach Blossom และ White Musk ที่ช่วยเติมความอ่อนโยนให้ทุกวันพักผ่อนของคุณ</p>
+              <span class="link-line">ดูสินค้า Sweet</span>
+            </div>
+          </a>
+
+          <a class="card mood-card mood mood--confident" href="product.html?mood=confident">
+            <div class="card__body">
+              <span class="mood-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 9-8 9-8-9z"/></svg>
+              </span>
+              <h3>Confident</h3>
+              <p class="mood-card__sub">Quiet Power</p>
+              <span class="mood-rule"></span>
+              <p class="mood-card__text">สะท้อนเสน่ห์ของความมั่นใจที่นิ่งสงบและน่าเชื่อถือโดยไม่ต้องพยายาม ผ่านความหอมสะอาดลุ่มลึกของ Iris และ Cedarwood ที่ช่วยเสริมบุคลิกให้ดูโปรเฟสชันนัลในทุกสถานการณ์</p>
+              <span class="link-line">ดูสินค้า Confident</span>
+            </div>
+          </a>
+
+          <a class="card mood-card mood mood--romance" href="product.html?mood=romance">
+            <div class="card__body">
+              <span class="mood-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.500-7 10-7 10z"/></svg>
+              </span>
+              <h3>Romance</h3>
+              <p class="mood-card__sub">Midnight Velvet</p>
+              <span class="mood-rule"></span>
+              <p class="mood-card__text">เผยเสน่ห์อันน่าหลงใหลและเย้ายวนใจในยามค่ำคืน ด้วยความหอมหวานลุ่มลึกของ Damask Rose และ Warm Vanilla ที่ทิ้งร่องรอยความทรงจำอันแสนพิเศษไว้ไม่รู้ลืม</p>
+              <span class="link-line">ดูสินค้า Romance</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div>
+          <span class="brand">Lumibelle</span>
+          <p class="mt-2 mb-0">น้ำหอมฉีดตัวและโรลออน สำหรับทุกอารมณ์</p>
+        </div>
+        <nav class="stack" aria-label="เมนูท้ายหน้า">
+          <div><a href="index.html">หน้าแรก</a></div>
+          <div><a href="product.html">สินค้าทั้งหมด</a></div>
+        </nav>
+      </div>
+      <p class="site-footer__copy mb-0">&copy; 2026 LUMIBELLE. สงวนลิขสิทธิ์</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

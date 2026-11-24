@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>รายการสั่งซื้อ — LUMIBELLE Admin</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-specific touches (admin) */
+    .page-head {
+      padding: var(--space-5) 0 var(--space-4);
+      background: linear-gradient(180deg, var(--cream) 0%, var(--cream-deep) 100%);
+    }
+
+    .page-head h1 {
+      margin-bottom: 0;
+      font-size: var(--text-3xl);
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      background: var(--white);
+    }
+
+    #ordersTable {
+      width: 100%;
+      min-width: 760px;
+      border-collapse: collapse;
+      font-size: var(--text-sm);
+      line-height: 1.7;
+    }
+
+    #ordersTable th,
+    #ordersTable td {
+      padding: var(--space-2);
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+    }
+
+    #ordersTable thead th {
+      font-weight: 400;
+      color: var(--ink-soft);
+      white-space: nowrap;
+      background: var(--cream);
+      border-bottom: 1px solid var(--line-strong);
+    }
+
+    #ordersTable tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    #ordersTable tbody tr:hover td {
+      background: var(--cream);
+    }
+
+    #ordersTable td:nth-child(1) {
+      white-space: nowrap;
+    }
+
+    #ordersTable td:nth-child(5) {
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    #ordersTable th:nth-child(5) {
+      text-align: right;
+    }
+
+    #ordersTable td:nth-child(4),
+    #ordersTable td:nth-child(6) {
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Lumibelle</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <h1>รายการสั่งซื้อ</h1>
+        <hr class="divider">
+        <p class="lead mb-0">เรียงจากรายการล่าสุดขึ้นก่อน</p>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <div class="table-wrap">
+          <table id="ordersTable">
+            <thead>
+              <tr>
+                <th scope="col">วันเวลา</th>
+                <th scope="col">ชื่อลูกค้า</th>
+                <th scope="col">เบอร์โทร/Line</th>
+                <th scope="col">รายการสินค้า</th>
+                <th scope="col">จำนวนเงินรวม</th>
+                <th scope="col">หมายเหตุ</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

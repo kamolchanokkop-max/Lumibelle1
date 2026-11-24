@@ -6,7 +6,7 @@
     "type": "spray",
     "size": "30ml",
     "price": 89,
-    "image": "fresh.jpeg",
+    "image""fresh.jpeg",
     "description": "กลิ่นสะอาด สดชื่น เบาสบาย ขนาดพกพา เหมาะกับการเติมความสดชื่นระหว่างวัน"
   },
   {
@@ -16,7 +16,7 @@
     "type": "spray",
     "size": "100ml",
     "price": 199,
-    "image": "fresh.jpeg",
+    "image""fresh.jpeg",
     "description": "กลิ่นสะอาด สดชื่น เบาสบาย ขนาดคุ้มค่า สำหรับใช้ประจำทุกวัน"
   },
   {
@@ -26,7 +26,7 @@
     "type": "spray",
     "size": "30ml",
     "price": 89,
-    "image": "sweet.jpeg",
+    "image""sweet.jpeg",
     "description": "กลิ่นหวานนุ่ม อบอุ่น อ่อนโยน ขนาดพกพา เหมาะกับการเติมกลิ่นหอมตลอดวัน"
   },
   {
@@ -36,7 +36,7 @@
     "type": "spray",
     "size": "100ml",
     "price": 199,
-    "image": "sweet.jpeg",
+    "image""sweet.jpeg",
     "description": "กลิ่นหวานนุ่ม อบอุ่น อ่อนโยน ขนาดคุ้มค่า สำหรับใช้ประจำทุกวัน"
   },
   {
@@ -46,7 +46,7 @@
     "type": "spray",
     "size": "30ml",
     "price": 89,
-    "image": "confident.jpeg",
+    "image""confident.jpeg",
     "description": "กลิ่นมั่นคง ดูน่าเชื่อถือ ขนาดพกพา เหมาะกับวันที่ต้องการความมั่นใจเป็นพิเศษ"
   },
   {
@@ -56,7 +56,7 @@
     "type": "spray",
     "size": "100ml",
     "price": 199,
-    "image": "confident.jpeg",
+    "image""confident.jpeg",
     "description": "กลิ่นมั่นคง ดูน่าเชื่อถือ ขนาดคุ้มค่า สำหรับใช้ประจำทุกวัน"
   },
   {
@@ -66,7 +66,7 @@
     "type": "spray",
     "size": "30ml",
     "price": 89,
-    "image": "romance.jpeg",
+    "image""romance.jpeg",
     "description": "กลิ่นอ่อนหวานโรแมนติก ขนาดพกพา เหมาะกับค่ำคืนและโอกาสพิเศษ"
   },
   {
@@ -76,7 +76,7 @@
     "type": "spray",
     "size": "100ml",
     "price": 199,
-    "image": "romance.jpeg",
+    "image""romance.jpeg",
     "description": "กลิ่นอ่อนหวานโรแมนติก ขนาดคุ้มค่า สำหรับใช้ประจำทุกวัน"
   },
   {
@@ -86,7 +86,7 @@
     "type": "rollon",
     "size": null,
     "price": 149,
-    "image": "fresh.jpeg",
+    "image""fresh.jpeg",
     "description": "โรลออนกลิ่นสะอาด สดชื่น พกพาง่าย ทาได้ตรงจุดที่ต้องการ"
   },
   {
@@ -96,7 +96,7 @@
     "type": "rollon",
     "size": null,
     "price": 149,
-    "image": "sweet.jpeg",
+    "image""sweet.jpeg",
     "description": "โรลออนกลิ่นหวานนุ่ม อบอุ่น พกพาง่าย ทาได้ตรงจุดที่ต้องการ"
   }
 ]
